@@ -1,21 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>At Home – Space Events | Madagascar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #fff;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #285943;
+        }
+
+        .logo span {
+            color: #c78b35;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #c78b35;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            background:
+                linear-gradient(rgba(30, 75, 55, 0.72), rgba(30, 75, 55, 0.72)),
+                linear-gradient(135deg, #3d7658, #c89a58);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 27px;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #c78b35;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #a96f24;
+        }
+
+        section {
+            padding: 70px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            color: #285943;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid #c78b35;
+        }
+
+        .card .icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #285943;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        .about {
+            background: #f6f3ed;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .cta {
+            text-align: center;
+            background: #285943;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            margin-bottom: 25px;
+            font-size: 17px;
+        }
+
+        footer {
+            background: #1f3027;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            .activities {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Bienvenue chez At Home – Space Events</h1>
+<header>
+    <div class="logo">
+        At Home <span>– Space Events</span>
+    </div>
 
-    <h2>Découvrez Madagascar • Vivez l'expérience • Célébrez vos moments</h2>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#activites">Nos activités</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<section class="hero" id="accueil">
+    <div class="hero-content">
+
+        <h1>Bienvenue chez At Home – Space Events</h1>
+
+        <h2>
+            Découvrez Madagascar • Vivez l'expérience • Célébrez vos moments
+        </h2>
+
+        <p>
+            Événements, circuits personnalisables, découvertes et expériences
+            authentiques à Madagascar.
+        </p>
+
+        <a href="#activites" class="button">
+            Découvrir nos activités
+        </a>
+
+    </div>
+</section>
+
+
+<section id="activites">
+
+    <div class="section-title">
+        <h2>Nos activités</h2>
+
+        <p>
+            At Home – Space Events vous accompagne pour découvrir Madagascar,
+            organiser vos événements et créer des moments uniques.
+        </p>
+    </div>
+
+
+    <div class="activities">
+
+        <div class="card">
+            <div class="icon">🎉</div>
+
+            <h3>Événements</h3>
+
+            <p>
+                Mariages, événements familiaux, rencontres, tournois
+                et moments de partage dans un espace adapté à vos besoins.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🌿</div>
+
+            <h3>Circuits à Madagascar</h3>
+
+            <p>
+                Des circuits personnalisables dans toute l'île,
+                selon vos envies : aventure, découverte, classique
+                ou expérience sur mesure.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🏝️</div>
+
+            <h3>Vacances organisées</h3>
+
+            <p>
+                Des séjours et vacances organisés pour découvrir
+                Madagascar autrement et profiter pleinement de votre expérience.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="apropos">
+
+    <div class="about-content">
+
+        <div class="section-title">
+            <h2>Une expérience authentique à Madagascar</h2>
+        </div>
+
+        <p>
+            At Home – Space Events associe découverte, événements,
+            loisirs et expériences à Madagascar.
+        </p>
+
+        <p>
+            Notre objectif est de proposer des expériences adaptées
+            aux envies de chacun, que ce soit pour un voyage,
+            un événement ou un moment à partager.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="cta" id="contact">
+
+    <h2>Créons votre expérience</h2>
 
     <p>
-        Découvrez nos événements, nos circuits
-        et nos expériences à Madagascar.
+        Vous avez un projet de voyage, d'événement ou de séjour ?
+        Parlons-en.
     </p>
 
-    <h2>Nos activités</h2>
+    <a href="mailto:contact@at-home-antsirabe-events.com" class="button">
+        Nous contacter
+    </a>
+
+</section>
+
+
+<footer>
+
+    <p><strong>At Home – Space Events</strong></p>
 
     <p>
-        Événements, circuits personnalisables,
-        découvertes et moments inoubliables.
+        Découvrez Madagascar • Vivez l'expérience • Célébrez vos moments
     </p>
+
+    <p>
+        © 2026 At Home – Space Events
+    </p>
+
+</footer>
 
 </body>
 </html>
